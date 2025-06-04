@@ -6,12 +6,11 @@ from scipy.signal import butter, filtfilt, periodogram
 
 # Load the CSV
 df = pd.read_csv(r"C:\Imran\METU\Thesis\code\shm_preprocessing_project\data\vibration.csv")
-
+# Ensure the timestamp is in seconds and acceleration is in g   
 
 # Extract time and acceleration
-t = df['Time']
-x = df['Acceleration']
-
+t = df['timestamp']
+x = df['accel_x']
 
 # 1. Plot raw acceleration vs. time
 plt.figure(figsize=(10, 4))
