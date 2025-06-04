@@ -4,9 +4,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from scipy.signal import butter, filtfilt, periodogram
 import os
-# Load the CSV
-data_path = os.path.join("data", r"C:\Imran\METU\Thesis\code\shm_preprocessing_project\data\vibration.csv")
+
+project_root = os.path.dirname(os.path.dirname(__file__))  # gets parent of scripts/
+data_path = os.path.join(project_root, "data", "vibration.csv")
 df = pd.read_csv(data_path)
+
+
 
 # Ensure the timestamp is in seconds and acceleration is in g   
 
