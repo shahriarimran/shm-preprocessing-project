@@ -41,4 +41,4 @@ Visualization using MATPLOTLIB
    
    
    '''
-
+[![Run Python scripts](https://github.com/shahriarimran/shm-preprocessing-project/actions/workflows/python-ci.yml/badge.svg)](https://github.com/shahriarimran/shm-preprocessing-project/actions/workflows/python-ci.yml)
